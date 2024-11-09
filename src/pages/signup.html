@@ -15,16 +15,16 @@
             <div class="row justify-content-center align-items-center vh-100">
                 <div class="custom-col">
                     <form class="text-left" id="signup-form" onsubmit="validateForm(event)">
-                        <h2 class="mb-4">Sign Up</h2>
+                        <h2 class="mb-4">Cadastrar</h2>
                         <div class="form-group">
-                            <label for="name">Name</label>
+                            <label for="name">Nome</label>
                             <div class="input-group mb-3 name-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text no-border-right no-bg no-padding-right">
                                         <span class="material-symbols-outlined">account_circle</span>
                                     </span>
                                 </div>
-                                <input type="text" class="form-control no-border-left no-bg input-padding name-input" id="name" placeholder="Enter your name" required minlength="3" maxlength="50" />
+                                <input type="text" class="form-control no-border-left no-bg input-padding name-input" id="name" placeholder="Insira seu nome" required minlength="3" maxlength="50" />
                             </div>
                             <div class="error-message" id="name-error"></div>
                         </div>
@@ -36,19 +36,37 @@
                                         <span class="material-symbols-outlined">mail</span>
                                     </span>
                                 </div>
-                                <input type="email" class="form-control no-border-left no-bg input-padding email-input" id="email" placeholder="Enter your e-mail" required />
+                                <input type="email" class="form-control no-border-left no-bg input-padding email-input" id="email" placeholder="Insira seu e-mail" required />
                             </div>
                             <div class="error-message" id="email-error"></div>
                         </div>
+
+                        <!-- falta acertar alguns pequenos detalhes aqui,  -->
+
                         <div class="form-group">
-                            <label for="password">Password</label>
+                            <label for="email">Data de Nascimento</label>
+                            <div class="input-group mb-3 email-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text no-border-right no-bg no-padding-right">
+                                        <span class="material-symbols-outlined"> calendar_month </span>
+                                    </span>
+                                </div>
+                                <input type="date" class="form-control no-border-left no-bg input-padding email-input" id="birthday_date" placeholder="Insira sua data de nascimento" required />
+                            </div>
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="password">Senha</label>
                             <div class="input-group mb-3 password-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text no-border-right no-bg no-padding-right">
                                         <span class="material-symbols-outlined">lock</span>
                                     </span>
                                 </div>
-                                <input type="password" class="form-control no-border-left no-border-right no-bg input-padding password-input" id="password" placeholder="Create a password" required />
+                                <input type="password" class="form-control no-border-left no-border-right no-bg input-padding password-input" id="password" placeholder="Digite sua senha" required />
                                 <div class="input-group-append">
                                     <button class="input-group-text no-border-left no-bg no-padding-left" type="button" onclick="togglePasswordVisibility()">
                                         <span class="material-symbols-outlined">visibility</span>
@@ -59,11 +77,11 @@
                         </div>
                         <div class="form-check mb-4">
                             <input type="checkbox" class="form-check-input" id="terms" required />
-                            <label class="form-check-label" for="terms">I agree to all <a href="#" class="terms-link">Terms & Conditions</a></label>
+                            <label class="form-check-label" for="terms"> Estou de acordo com os <a href="#" class="terms-link">Termos & Condições</a></label>
                         </div>
-                        <button type="submit" class="login-btn">Finish</button>
+                        <button type="submit" class="login-btn">Cadastrar</button>
                         <div class="text-center">
-                            <p>or sign up with</p>
+                            <p>cadastrar com</p>
                             <div class="d-flex justify-content-center mb-4 circles-wrapper">
                                 <button class="circle">
                                     <img src="../assets/images/google-icon.svg" alt="Google Icon" class="icon" />
@@ -75,7 +93,7 @@
                                     <img src="../assets/images/facebook-icon.svg" alt="Facebook Icon" class="icon" />
                                 </button>
                             </div>
-                            <p class="mt-2">Already have an account? <a href="signin.html" class="sign-in-link">Sign In</a></p>
+                            <p class="mt-2">Já possui uma conta? <a href="signin.html" class="sign-in-link">Entrar</a></p>
                         </div>
                         <div class="text-center mt-5">
                             <a href="/index.html">
